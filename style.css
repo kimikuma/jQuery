@@ -2,7 +2,7 @@
   padding:0;
   margin:0;
   box-sizing: border-box;
-}  
+}
 
 body{
   font-family: "Londrina Sketch", sans-serif;
@@ -14,6 +14,7 @@ body{
 header{
   width:100%;
   
+
 
 }
 
@@ -28,6 +29,7 @@ nav{
   margin:0px auto 30px;
   text-align: end;
   
+
 }
 
 
@@ -36,7 +38,32 @@ li{
   margin-right:10px;
 }
 
-.main-wrapper{
+header.fixed{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background-color:#000000;
+  transition:0.8s;
+}
+
+header.fixed h1{
+  color:#fff;
+}
+
+nav.fixed{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background-color:#000000;
+  transition:0.8s;
+}
+
+
+
+
+.main-top{
   width:90%;
   height:650px;
   margin:0 auto;
@@ -69,6 +96,7 @@ li{
   flex-wrap: wrap;
   justify-content: center;
   margin-top:40px;
+
 }
 
 .introduce img{
@@ -78,5 +106,74 @@ li{
 
 .introduce-text{
   text-align: start;
-  margin-left:70px;
+  margin-left:30px;
+  background-color:#ffffe2;
+  padding-left:20px;
+}
+
+.main-last{
+  margin:60px auto;
+}
+
+.ecology img{
+  height:300px;
+  width:300px;
+}
+
+.ecology p{
+  margin-bottom:20px;
+}
+
+
+
+.btn{
+   background-color:#7fffd4;
+   border-bottom:5px solid #66cdaa;
+   text-align:start;
+
+}
+
+.ecology{
+  display: none;
+}
+
+.message{
+  display: none;
+  margin:40px auto;
+  font-size:2em;
+}
+
+.active{
+  display: block;
+}
+
+.form{
+  background-color: #dcdcdc;
+  width:60%;
+  text-align:start;
+  margin: 40px auto;
+  padding:20px;
+}
+
+.namefield,
+.advisearea{
+  height:60px;
+  width:250px;
+}
+
+.formsubmit{
+  margin-top:20px;
+  height:40px;
+  width:150px;
+}
+
+.error{
+  color:red;
+}
+
+footer{
+  font-size: 2em;
+  width:100%;
+  text-align: center;
+  padding:10px;
 }

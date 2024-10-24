@@ -7,7 +7,7 @@
   　<link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">-
 　　<script src="https://kit.fontawesome.com/238758c22e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="jquery-3.7.1.min"></script>
+    <script src="jquery.min.js"></script>
     <title>hoo</title>
   </head>
   <body>
@@ -16,20 +16,20 @@
     </header>
     <nav>
       <ul>
-      <li>
+      <li class="home">
       <i class="fa-solid fa-house-chimney"></i>Home
       </li>
       <li>
-        <i class="fa-solid fa-pen-to-square"></i>About
+        <a href="#about"><i class="fa-solid fa-pen-to-square"></i>About</a>
       </li>
       <li>
-        <i class="fa-solid fa-book-journal-whills"></i>Form
+        <a href="#form"><i class="fa-solid fa-book-journal-whills"></i>Form</a>
       </li>
       </ul>
     </nav>
     <main>
-      <div class="main-wrapper">
-        <p class="main-text">Welcome Hippo World</p>
+      <div class="main-top">
+        <h1 class="main-text">Welcome Hippo World</h1>
       </div>
       <div class="main-contents">
         <div class="main-title">
@@ -41,17 +41,72 @@
           <div class="introduce">
             <img src="image/pngtree-cute-hippopotamus-eating-watermelon-isolated-cartoon-animal-png-image_12232772.png">
               <div class="introduce-text">
-                <h3>introduce</h3>
+                <h3 id="about">introduce</h3>
                 <p>こんにちは！</p>
                 <p>私の名前はほーぽんです。</p>
                 <p>好きなことは寝ること</p>
                 <p>あとは食べること</p>
+                <p>よろしくね<i class="fa-regular fa-face-smile"></i></p>
               </div>
           </div>
         </div>
+        <div class="main-last">
+
+          <h2>ほーぽんのせいたい</h2>
+          <select id="select">
+            <option value="0">ほーぽんのふつう</option>
+            <option value="1">ほーぽんのかなしみ</option>
+            <option value="2">ほーぽんのいかり</option>
+            <option value="3">ほーぽんのこうぶつ</option>
+            <option value="4">ほーぽんのすいみん</option>
+          </select>
+          <input type="submit" value="みたい！" class="submit">
+          <div class="ecology">
+          <img src="image/202209_007_s.jpg"><br>
+          <span>これがほーぽんのつうじょうです。</span><br>
+　　　　　<span>かわいいでしょ</span><br>
+　　　　　</div>
+          <div class="ecology">
+          <img src="image/illustkun-03857-hippopotamus.png"><br>
+          <span>これがほーぽんのかなしいときです。</span><br>
+　　　　　<span>でも眠れば元気</span><br>
+　　　　　</div>
+　　　　　<div class="ecology">
+          <img src="image/nhippopotamus_b04.png"><br>
+          <span>これがほーぽんがおこっているとき</span><br>
+　　　　　<span>おこると危険でも眠れば元気</span><br>
+　　　　　</div>
+　　　　　<div class="ecology">
+          <img src="image/pngtree-hippopotamus-eating-watermelon-png-image_7217993.png"><br>
+          <span>これがほーぽんのお食事</span><br>
+　　　　　<span>すいか大好物</span><br>
+　　　　　</div>
+　　　　　<div class="ecology">
+          <img src="image/19839.png"><br>
+          <span>これがほーぽんのすいみん</span><br>
+　　　　　<span>基本眠ればallOK</span><br>
+　　　　　<h3>すいみんが大好きです！</h3>
+　　　　　</div>
+        </div>
+        <div class="form" id="form">
+          <h3>よかったらみなさんのご意見ください</h3>
+          <p class="error"></p>
+          <h3>name</h3>
+          <input type="text_field" class="namefield">
+          <h3>advice</h3>
+          <textarea class="advisearea"></textarea>
+          <p><input type="submit" value="ほーぽんへ" class="formsubmit"></p>
+          <div class="message">
+          <p class="name"></p>
+          <p class="advise"></p>
+          <h2 class="thank">Thank you<i class="fa-regular fa-face-kiss-wink-heart"></i></h2>
+        </div>
+        </div>
       </div>
     </main>
-
+　　<footer>
+　　  @thank you!
+　　</footer>
     <script src="app.js"></script>
   </body>
 </html>
