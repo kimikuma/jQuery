@@ -1,0 +1,82 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}  
+
+body{
+  font-family: "Londrina Sketch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+header{
+  width:100%;
+  background-color:#f0f8ff;
+
+}
+
+header h1{
+  margin-left:30px;
+
+}
+
+
+nav{
+  width:100%;
+  margin:0px auto 30px;
+  text-align: end;
+  background-color:#f0f8ff;
+}
+
+
+li{
+  display:inline-block;
+  margin-right:10px;
+}
+
+.main-wrapper{
+  width:90%;
+  height:650px;
+  margin:0 auto;
+  /*background-color:red;*/
+  background-image:url(image/9575.jpg_wh860.jpg);
+  background-size:cover;
+  background-position: center;
+  position: relative;
+}
+
+.main-text{
+  position: absolute;
+  bottom:160px;
+  left:150px;
+  font-size:2.5em;
+}
+
+.main-contents{
+  margin:20px auto;
+  text-align: center;
+}
+
+.main-title{
+  font-size: 1.3em;
+}
+
+
+.introduce{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top:40px;
+}
+
+.introduce img{
+  height:200px;
+  width:15%;
+}
+
+.introduce-text{
+  text-align: start;
+  margin-left:70px;
+}
